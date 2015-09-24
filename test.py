@@ -1,5 +1,9 @@
 #Euler Question 1
+<<<<<<< Updated upstream
 print "Euler Question 1"
+=======
+
+>>>>>>> Stashed changes
 total = 0
 for num in range(1000):
   if num % 3 ==0 or num % 5 ==0:
