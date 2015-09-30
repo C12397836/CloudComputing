@@ -1,8 +1,19 @@
+
+week =1
+month=1
+year=1900
+d=1
+day=1
+
+result=1
+
+'''
 week in range (1,4)
 month in range (1, 12)
 year in range (1900, 2001)
-d (1,7)
+d in range(1,7)
 result =1
+'''
 '''
 jan 1
 feb 2
@@ -18,26 +29,29 @@ nov 11
 dec 12
 '''
 
-if(month =9 || 4 || 6 || 11):
-  day in range(1,30)
-else if(month =2):
-  day in range(1,28)
-else:
-  day in range(1,31)
 
-if(day==1 && month ==1 && year==1900)
-  d=7
 
-for(;;):
-  d++
-    if(d>7):
-      d=1 && week++
-        if(week>4):
-          week=1 && month ++
-            if(month>12):
-              month=1 && year++
-                if(d==7 && day ==1 && week ==1 ):
-                  result++
+for x in range(0, 100):
+  if(month == 9 or 4 or 6 or 11):
+    day in range(1,30)
+  elif(month ==2):
+    day in range(1,28)
+  else:
+    day in range(1,31)
+
+  d+=1
+  if(d==7 and day ==1 and week ==1 ):
+    result+=1
+  if(d>7):
+    d=1
+    week +=1
+    if(week>4):
+      week=1
+      month +=1
+      if(month>12):
+        month=1
+        year +=1
+
 
 print result
 
