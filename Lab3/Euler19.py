@@ -1,4 +1,8 @@
-if(month =9 || 4 )
+if(month =9 || 4 || 6 || 11):
+  day in range(1,30)
+else if(month =2):
+  day in range(1,28)
+else:
   day in range(1,31)
 
 week in range(1,4)
@@ -13,7 +17,7 @@ may 5
 june 6
 jul 7
 aug 8
-sept 9 
+sept 9
 octo 10
 nov 11
 dec 12
